@@ -8,11 +8,17 @@
   margin: 0;
   color: var(--text-color);
 }
+body {
+  background-color: var(--main-bg-color);
+}
 header {
   background-color: var(--header-bg-color);
   justify-content: space-between;
   display: flex;
   position: fixed;
+  width: 100%;
+  height: 65px;
+  border-bottom: solid 2px var(--footer-bg-color);
 }
 
 header img {
@@ -21,7 +27,11 @@ header img {
   margin: 0px 0px 0px 75px;
   border-radius: 50%;
 }
-header h3 {
+h3 {
+  transition: 1s;
+}
+header h3:hover {
+  color: gray;
 }
 nav,
 h3 {
@@ -41,13 +51,29 @@ nav ul li {
   margin: 20px;
   font-size: 1.5rem;
   font-weight: 600;
-  transition: 1.5s;
+  transition: 1s;
 }
 .link_menu:hover {
-  font-size: 1.8rem;
+  transform: translate(5px);
   color: gray;
 }
+
+/*main*/
 main {
   height: 100%;
   background-color: var(--main-bg-color);
+}
+section {
+  text-align: center;
+}
+section img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+/*Footer*/
+footer {
+  height: 70px;
+  background-color: var(--footer-bg-color);
+  margin-top: 100%;
 }
