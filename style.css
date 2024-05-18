@@ -31,7 +31,7 @@ h3 {
   transition: 1s;
 }
 header h3:hover {
-  color: gray;
+  color: var(--main-bg-color);
 }
 nav,
 h3 {
@@ -55,7 +55,7 @@ nav ul li {
 }
 .link_menu:hover {
   transform: translate(5px);
-  color: gray;
+  color: var(--main-bg-color);
 }
 
 /*main*/
