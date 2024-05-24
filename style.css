@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 html body {
   background-color: var(--html-bg-color);
@@ -26,8 +27,11 @@ header {
   height: 60px;
   position: fixed;
   width: 100%;
+  top: 0;
+  margin-bottom: 60px;
+  border-bottom: solid #878e71;
 }
-img {
+#img_header {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -61,7 +65,29 @@ li {
   color: var(--html-bg-color);
 }
 /*main*/
-
+main {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+.section_main {
+  padding-top: 60px;
+  height: 700px;
+}
+#inicio {
+  display: inline;
+}
+#servicos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+#sobre_nos {
+  display: grid;
+}
+#contato {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
 /*footer*/
 footer {
   position: absolute;
