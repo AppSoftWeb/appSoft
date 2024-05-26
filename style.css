@@ -3,6 +3,8 @@
   --html-bg-color: #02030e;
   --header-footer-bg-color: #f7f7f7ef;
   ---bg-color: #878e71;
+  ---text-p-color: rgb(168, 174, 192);
+  ---text-h-color: #e0e4f7ef;
 }
 * {
   margin: 0;
@@ -74,7 +76,23 @@ main {
   height: 700px;
 }
 #inicio {
-  display: inline;
+  display: grid;
+  grid-template-columns: auto 50%;
+  justify-content: space-around;
+  padding: 150px;
+}
+#img_inicio {
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(---text-h-color);
+}
+#inicio h2 {
+  padding: 30px;
+  color: var(---text-h-color);
+  text-align: center;
+}
+#inicio p {
+  color: var(---text-p-color);
+  text-align: justify;
 }
 #servicos {
   display: grid;
@@ -90,7 +108,7 @@ main {
 }
 /*footer*/
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
